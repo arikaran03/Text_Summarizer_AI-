@@ -1,68 +1,60 @@
-<p align="center">
-    <img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="Python Version">
-    <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
-</p>
+# 🤖 AI Text Summarizer 📝
 
-<h1 align="center">Text Summarizer AI</h1>
+[![GitHub repo size](https://img.shields.io/github/repo-size/arikaran03/Text_Summarizer_AI-?style=for-the-badge)](https://github.com/arikaran03/Text_Summarizer_AI-)
+[![Languages](https://img.shields.io/github/languages/count/arikaran03/Text_Summarizer_AI-?style=for-the-badge)](https://github.com/arikaran03/Text_Summarizer_AI-)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE) Transform long texts into clear and concise summaries with the power of AI! This web application leverages the Google Gemini API to provide summaries of three different lengths: short, medium, and detailed.
 
-<p align="center">
-    <em>Effortlessly generate concise summaries from long texts using state-of-the-art AI models.</em>
-</p>
+## ✨ Features
 
----
+* **🤖 AI-Powered Summarization:** Utilizes the Google Gemini API for intelligent text summarization.
+* **🔑 API Key Management:** Securely save your Gemini API key in local storage for convenient use.
+* **📏 Multiple Summary Lengths:**
+    * ⚡ **Short Summary:** Get the key points in just a few sentences.
+    * 📄 **Medium Summary:** A balanced overview of the text.
+    * 🗂️ **Detailed Summary:** An in-depth analysis of the content.
+* **📋 Easy Text Input:** Paste your text directly into the application.
+* **💅 Sleek User Interface:** A clean, modern, and responsive design.
+* **🔄 Loading Indicator:** Visual feedback while the summary is being generated.
+* **🚀 Smooth Scrolling:** Enhanced user experience with smooth transitions.
 
-## 🚀 Features
+## 🛠️ Technologies Used
 
-- **Automatic Text Summarization**: Generate short, meaningful summaries from any input text.
-- **Easy to Use**: Simple interface for quick summarization.
-- **Customizable**: Adjust summary length and style.
-- **Modern NLP Models**: Powered by advanced transformer-based models.
+* **Frontend:**
+    * HTML5
+    * CSS3
+    * JavaScript (ES6 Modules)
+* **AI Model:**
+    * Google Generative AI SDK (`@google/generative-ai`)
+    * Gemini 2.0 Flash Model
+* **Styling:**
+    * Custom CSS with Flexbox for layout.
+    * Gradient backgrounds and modern design elements.
 
-## 🛠️ Installation
+## 🚀 How to Use
 
-```bash
-git clone https://github.com/yourusername/Text_Summarizer_AI.git
-cd Text_Summarizer_AI
-pip install -r requirements.txt
-```
+1.  **Clone the Repository (Optional - if running locally):**
+    ```bash
+    git clone [https://github.com/arikaran03/Text_Summarizer_AI-.git](https://github.com/arikaran03/Text_Summarizer_AI-.git)
+    cd Text_Summarizer_AI-
+    ```
+2.  **Open `index.html`:**
+    * If you've cloned the repository, open the `index.html` file in your web browser.
+    * Alternatively, you can directly access it if deployed (e.g., via GitHub Pages - link to your deployed version if available).
 
-## 💡 Usage
+3.  **Enter Your Gemini API Key:**
+    * Scroll down to the "Enter Your Gemini API Key" section.
+    * Input your valid Google Gemini API key into the text field.
+    * Click the "Save API Key" button. The key will be stored in your browser's local storage for future sessions.
+    * *You can obtain a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).*
 
-```python
-from summarizer import summarize
+4.  **Summarize Your Text:**
+    * Scroll or click the "Try Now" button to navigate to the "Text Summarizer" section.
+    * Paste the text you want to summarize into the text area.
+    * Choose your desired summary length by clicking one of the buttons:
+        * "⚡ Short Summary"
+        * "📄 Medium Summary"
+        * "🗂️ Detailed Summary"
 
-text = "Your long article or document goes here..."
-summary = summarize(text)
-print(summary)
-```
-
-Or use the provided CLI:
-
-```bash
-python summarize.py --input input.txt --output summary.txt
-```
-
-## 📦 Requirements
-
-- Python 3.8+
-- Transformers
-- Torch
-- Other dependencies in `requirements.txt`
-
-## 🤖 Model Details
-
-This project uses pre-trained transformer models (e.g., BART, T5) for extractive and abstractive summarization.
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙌 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first.
-
----
-
-<p align="center">
-    <b>Made with ❤️ for the AZ Hackathon</b>
-</p>
+5.  **View Your Summary:**
+    * A loading indicator will appear while the AI generates the summary.
+    * Once complete, the summarized text will be displayed in the "🔍 Summary:" section below.
